@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Link Selector</title>
+    <style>
+        a {text-decoration: none;}
+        a:visited {color: red;}
+        a:link::after {content: '-' attr(href);}
+    </style>
+</head>
+<body>
+    <a>Nothing</a><br>
+    <a href="https://google.com">Google</a><br>
+    <a href="https://navercom">Naver</a><br>
+    <a href="https://daum.com">Daum</a><br>
+</body>
+</html>
